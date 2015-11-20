@@ -13,15 +13,15 @@ public class OnionProductionView {
 
 		for (Onion onion : onions) {
 			count++;
-			Logger.Log("Updating view for onion " + count + "and id " + onion.getId());
+			Logger.log("Updating view for onion " + count + "and id " + onion.getId());
 		}
 	}
 
-	public void ClickOpenFactory(ICallback iCallback) {
+	public void clickOpenFactory(ICallback iCallback) {
 		iCallback.call();
 	}
 
-	public void ClickProduceOnion(ICallback iCallback) {
+	public void clickProduceOnion(ICallback iCallback) {
 		iCallback.call();
 	}
 }

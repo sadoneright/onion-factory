@@ -6,15 +6,15 @@ import onion.factory.core.domain.services.IFactoryRepository;
 public class FactoryRepository implements IFactoryRepository {
 
 	public void save(Factory factory) {
-		Database.Insert(factory.getId(), factory);
+		Database.insert(factory.getId(), factory);
 	}
 
 	public Factory load(Long factoryId) {
-		return (Factory) Database.Select(factoryId);
+		return (Factory) Database.select(factoryId);
 	}
 
 	public void update(Factory factory) {
-		Database.Update(factory.getId(), factory);
+		Database.update(factory.getId(), factory);
 	}
 
 }

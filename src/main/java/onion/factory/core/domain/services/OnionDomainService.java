@@ -16,7 +16,7 @@ public class OnionDomainService implements IOnionDomainService {
 	}
 
 	Random rand = new Random();
-	public List<Onion> ProduceOnions(OnionQuantity quantity) {
+	public List<Onion> produceOnions(OnionQuantity quantity) {
 		int counts = OnionQuantity.getQuantity(quantity);
 		List<Onion> onions = new ArrayList<Onion>();
 		for (int j = 0; j < counts; j++) {

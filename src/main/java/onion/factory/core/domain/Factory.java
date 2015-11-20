@@ -36,11 +36,11 @@ public class Factory {
 		this.name = name;
 	}
 
-	public void Open(IFactoryOpened factoryOpened) {
+	public void open(IFactoryOpened factoryOpened) {
 		this.opened = factoryOpened.at();
 	}
 
-	public void Assign(List<Onion> producedOnions) {
+	public void assign(List<Onion> producedOnions) {
 		this.producedOnions.addAll(producedOnions);
 
 	}

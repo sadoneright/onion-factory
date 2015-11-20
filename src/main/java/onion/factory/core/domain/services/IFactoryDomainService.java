@@ -7,7 +7,7 @@ import onion.factory.core.domain.FactoryName;
 import onion.factory.core.domain.Onion;
 
 public interface IFactoryDomainService {
-	Factory OpenFactory(Long factoryId, FactoryName name);
+	Factory openFactory(Long factoryId, FactoryName name);
 
-	void AssignProducedOnions(Long factoryId, List<Onion> producedOnions);
+	void assignProducedOnions(Long factoryId, List<Onion> producedOnions);
 }

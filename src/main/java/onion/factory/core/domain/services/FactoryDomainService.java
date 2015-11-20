@@ -18,22 +18,22 @@ public class FactoryDomainService implements IFactoryDomainService {
 		this.repository = repository;
 	}
 
-	public Factory OpenFactory(Long factoryId, FactoryName name) {
+	public Factory openFactory(Long factoryId, FactoryName name) {
 		Factory factory = new Factory(factoryId, name);
 
-		factory.Open(this.factoryOpened);
+		factory.open(this.factoryOpened);
 
 		this.repository.save(factory);
 
 		return factory;
 	}
 
-	public void AssignProducedOnions(Long factoryId, List<Onion> producedOnions) {
-		   Factory factory = this.repository.load(factoryId);
+	public void assignProducedOnions(Long factoryId, List<Onion> producedOnions) {
+		Factory factory = this.repository.load(factoryId);
 
-           factory.Assign(producedOnions);
+		factory.assign(producedOnions);
 
-           this.repository.update(factory);
+		this.repository.update(factory);
 	}
 
 }

@@ -9,7 +9,7 @@ import onion.factory.core.domain.OnionQuantity;
 
 public interface IOnionProductionApplicationService {
 
-	Factory OpenFactory(Long factoryId, FactoryName factoryName);
+	Factory openFactory(Long factoryId, FactoryName factoryName);
 
-	List<Onion> ProduceOnions(Long factoryId, OnionQuantity quanity);
+	List<Onion> produceOnions(Long factoryId, OnionQuantity quanity);
 }

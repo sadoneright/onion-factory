@@ -13,13 +13,13 @@ public class Application {
 
 	public void setUp() {
 		this.view = new OnionProductionView();
-		this.presenter = new OnionProductionPresenter(this.view, WireCore.Up());
-		this.presenter.Initialize();
+		this.presenter = new OnionProductionPresenter(this.view, WireCore.up());
+		this.presenter.initialize();
 	}
 
 	public void run() {
-		this.view.ClickOpenFactory(presenter.handleOpenFactoryClicked);
-		this.view.ClickProduceOnion(presenter.handleProduceOnionClicked);
+		this.view.clickOpenFactory(presenter.handleOpenFactoryClicked);
+		this.view.clickProduceOnion(presenter.handleProduceOnionClicked);
 	}
 
 	public static void main(String[] args) {

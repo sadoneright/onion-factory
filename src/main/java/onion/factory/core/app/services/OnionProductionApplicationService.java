@@ -21,16 +21,16 @@ public class OnionProductionApplicationService implements IOnionProductionApplic
 		this.factoryDomainService = factoryDomainService;
 	}
 
-	public Factory OpenFactory(Long factoryId, FactoryName factoryName) {
-		Factory factory = this.factoryDomainService.OpenFactory(factoryId, factoryName);
+	public Factory openFactory(Long factoryId, FactoryName factoryName) {
+		Factory factory = this.factoryDomainService.openFactory(factoryId, factoryName);
 
 		return factory;
 	}
 
-	public List<Onion> ProduceOnions(Long factoryId, OnionQuantity quanity) {
-		List<Onion> produceOnions = this.onionDomainService.ProduceOnions(quanity);
+	public List<Onion> produceOnions(Long factoryId, OnionQuantity quanity) {
+		List<Onion> produceOnions = this.onionDomainService.produceOnions(quanity);
 
-		this.factoryDomainService.AssignProducedOnions(factoryId, produceOnions);
+		this.factoryDomainService.assignProducedOnions(factoryId, produceOnions);
 
 		return produceOnions;
 	}

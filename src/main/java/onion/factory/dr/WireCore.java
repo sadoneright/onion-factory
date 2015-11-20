@@ -9,8 +9,9 @@ import onion.factory.infrastructure.FactoryRepository;
 import onion.factory.infrastructure.OnionRepository;
 
 public class WireCore {
-	public static IOnionProductionApplicationService Up()
-    {
-        return new OnionProductionApplicationService(new FactoryDomainService(new FactoryRepository(), new FactoryOpened()), new OnionDomainService(new OnionRepository()));
-    }
+	public static IOnionProductionApplicationService up() {
+		return new OnionProductionApplicationService(
+				new FactoryDomainService(new FactoryRepository(), new FactoryOpened()),
+				new OnionDomainService(new OnionRepository()));
+	}
 }

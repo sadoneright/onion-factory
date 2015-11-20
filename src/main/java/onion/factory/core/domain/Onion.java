@@ -1,9 +1,10 @@
 package onion.factory.core.domain;
 
 public class Onion {
+
 	Long id;
 
-	public Onion(Long id){
+	public Onion(Long id) {
 		this.id = id;
 	}
 

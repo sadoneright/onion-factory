@@ -24,40 +24,42 @@ public class OnionProductionPresenter {
 	}
 
 	public ICallback handleOpenFactoryClicked = new ICallback() {
-		
+
 		public void call() {
-			HandleOpenFactoryClicked();
+			handleOpenFactoryClicked();
 		}
 	};
-	
+
 	public ICallback handleProduceOnionClicked = new ICallback() {
-		
+
 		public void call() {
-			HandleProduceOnionClicked();			
+			handleProduceOnionClicked();
 		}
 	};
-	public void Initialize() {
-		Logger.Log("Initializing presenter");
-		
+
+	public void initialize() {
+		Logger.log("Initializing presenter");
+
 	}
+
 	Random rand = new Random();
-	Long factoryId =rand.nextLong(); 
-	public  void HandleProduceOnionClicked() {
-		Logger.Log("Handling Produce Onion Clicked Event");
-		
-		
+	Long factoryId = rand.nextLong();
+
+	public void handleProduceOnionClicked() {
+		Logger.log("Handling Produce Onion Clicked Event");
+
 		OnionQuantity onionQuantity = new OnionQuantity(rand.nextInt(255));
 
-		List<Onion> onions = this.onionProductionApplicationService.ProduceOnions(factoryId, onionQuantity);
+		List<Onion> onions = this.onionProductionApplicationService.produceOnions(factoryId, onionQuantity);
 
 		this.view.Update(onions);
 	}
 
-	public  void HandleOpenFactoryClicked() {
-		Logger.Log("Handling Open Factory Clicked Event");
+	public void handleOpenFactoryClicked() {
+		Logger.log("Handling Open Factory Clicked Event");
 
 		FactoryName factoryName = new FactoryName("TEst");
 
-		this.onionProductionApplicationService.OpenFactory(factoryId, factoryName);
+		this.onionProductionApplicationService.openFactory(factoryId, factoryName);
 	}
 }
