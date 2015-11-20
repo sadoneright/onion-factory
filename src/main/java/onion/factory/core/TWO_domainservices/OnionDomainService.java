@@ -1,11 +1,11 @@
-package onion.factory.core.domain.services;
+package onion.factory.core.TWO_domainservices;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import onion.factory.core.domain.Onion;
-import onion.factory.core.domain.OnionQuantity;
+import onion.factory.core.THREE_domain.Onion;
+import onion.factory.core.THREE_domain.OnionQuantity;
 
 public class OnionDomainService implements IOnionDomainService {
 

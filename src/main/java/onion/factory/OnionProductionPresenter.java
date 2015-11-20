@@ -5,10 +5,10 @@ import java.util.Random;
 
 import javax.swing.plaf.IconUIResource;
 
-import onion.factory.core.app.services.IOnionProductionApplicationService;
-import onion.factory.core.domain.FactoryName;
-import onion.factory.core.domain.Onion;
-import onion.factory.core.domain.OnionQuantity;
+import onion.factory.core.ONE_appservices.IOnionProductionApplicationService;
+import onion.factory.core.THREE_domain.FactoryName;
+import onion.factory.core.THREE_domain.Onion;
+import onion.factory.core.THREE_domain.OnionQuantity;
 import onion.factory.infrastructure.ICallback;
 import onion.factory.infrastructure.Logger;
 
@@ -24,7 +24,6 @@ public class OnionProductionPresenter {
 	}
 
 	public ICallback handleOpenFactoryClicked = new ICallback() {
-
 		public void call() {
 			handleOpenFactoryClicked();
 		}

@@ -1,4 +1,4 @@
-package onion.factory.core.domain;
+package onion.factory.core.THREE_domain;
 
 public class OnionQuantity {
 	private int numberOfOnions;

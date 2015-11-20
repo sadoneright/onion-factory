@@ -2,7 +2,7 @@ package onion.factory;
 
 import java.util.List;
 
-import onion.factory.core.domain.Onion;
+import onion.factory.core.THREE_domain.Onion;
 import onion.factory.infrastructure.ICallback;
 import onion.factory.infrastructure.Logger;
 

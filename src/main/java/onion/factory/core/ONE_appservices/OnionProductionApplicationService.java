@@ -1,13 +1,13 @@
-package onion.factory.core.app.services;
+package onion.factory.core.ONE_appservices;
 
 import java.util.List;
 
-import onion.factory.core.domain.Factory;
-import onion.factory.core.domain.FactoryName;
-import onion.factory.core.domain.Onion;
-import onion.factory.core.domain.OnionQuantity;
-import onion.factory.core.domain.services.IFactoryDomainService;
-import onion.factory.core.domain.services.IOnionDomainService;
+import onion.factory.core.THREE_domain.Factory;
+import onion.factory.core.THREE_domain.FactoryName;
+import onion.factory.core.THREE_domain.Onion;
+import onion.factory.core.THREE_domain.OnionQuantity;
+import onion.factory.core.TWO_domainservices.IFactoryDomainService;
+import onion.factory.core.TWO_domainservices.IOnionDomainService;
 
 public class OnionProductionApplicationService implements IOnionProductionApplicationService {
 

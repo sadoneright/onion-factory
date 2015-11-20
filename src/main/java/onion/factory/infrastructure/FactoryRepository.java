@@ -1,7 +1,7 @@
 package onion.factory.infrastructure;
 
-import onion.factory.core.domain.Factory;
-import onion.factory.core.domain.services.IFactoryRepository;
+import onion.factory.core.THREE_domain.Factory;
+import onion.factory.core.TWO_domainservices.IFactoryRepository;
 
 public class FactoryRepository implements IFactoryRepository {
 

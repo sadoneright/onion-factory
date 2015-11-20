@@ -1,6 +1,6 @@
 package onion.factory;
 
-import onion.factory.dr.WireCore;
+import onion.factory.dependency.resolution.WireCore;
 
 public class Application {
 

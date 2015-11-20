@@ -1,9 +1,9 @@
-package onion.factory.dr;
+package onion.factory.dependency.resolution;
 
-import onion.factory.core.app.services.IOnionProductionApplicationService;
-import onion.factory.core.app.services.OnionProductionApplicationService;
-import onion.factory.core.domain.services.FactoryDomainService;
-import onion.factory.core.domain.services.OnionDomainService;
+import onion.factory.core.ONE_appservices.IOnionProductionApplicationService;
+import onion.factory.core.ONE_appservices.OnionProductionApplicationService;
+import onion.factory.core.TWO_domainservices.FactoryDomainService;
+import onion.factory.core.TWO_domainservices.OnionDomainService;
 import onion.factory.infrastructure.FactoryOpened;
 import onion.factory.infrastructure.FactoryRepository;
 import onion.factory.infrastructure.OnionRepository;

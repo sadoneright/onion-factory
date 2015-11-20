@@ -1,6 +1,6 @@
-package onion.factory.core.domain.services;
+package onion.factory.core.TWO_domainservices;
 
-import onion.factory.core.domain.Factory;
+import onion.factory.core.THREE_domain.Factory;
 
 public interface IFactoryRepository {
 
